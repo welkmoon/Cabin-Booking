@@ -1,0 +1,13 @@
+/* Загальні стилі */
+@import url("../base.css");
+@import url("../layout.css");
+@import url("../utilities.css");
+@import url("../components.css");
+
+/* Глобальні partials */
+@import url("../partials/global.header-nav.css");
+@import url("../partials/global.footer.css");
+
+/* Rental policies partial */
+@import url("../partials/rental-policies.content.css");
+

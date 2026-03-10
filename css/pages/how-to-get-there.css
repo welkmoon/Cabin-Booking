@@ -1,0 +1,14 @@
+/* Загальні стилі */
+@import url("../base.css");
+@import url("../layout.css");
+@import url("../utilities.css");
+@import url("../components.css");
+
+/* Глобальні partials */
+@import url("../partials/global.header-nav.css");
+@import url("../partials/global.footer.css");
+
+/* How-to-get-there partials */
+@import url("../partials/how-to-get-there.guide.css");
+@import url("../partials/how-to-get-there.map.css");
+@import url("../partials/how-to-get-there.contact.css");

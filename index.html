@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabin Rental</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="img/favicon/android-chrome-512x512.png"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/pages/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/global/global.header-nav.partial.html"
+      ></nav>
+    </header>
+    <main class="main">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/index/index.hero.partial.html"
+      ></section>
+      <!--Andrii Khrushch part 2 start -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/index/index.adventure-hero.partial.html"
+      ></section>
+      <!--Andrii Khrushch part 2 end-->
+
+      <!--Mark Hlovachevskyi part 3 start -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/index/index.cabin-rentals.partial.html"
+      ></section>
+      <!--Mark Hlovachevskyi part 3 end-->
+
+      <!--Rostyslav Kaziuta part 4 start-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/index/index.things-to-do.partial.html"
+      ></section>
+      <!--Rostyslav Kaziuta part 4 end-->
+      <!-- Herei Vladyslav part 5 start -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/index/index.our-facilities.partial.html"
+      ></section>
+      <!-- Herei Vladyslav part 5 end -->
+      <!--Cherevychnyi Yaroslav part 6 start-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/index/index.shop-cafe.partial.html"
+      ></section>
+      <!--Cherevychnyi Yaroslav part 6 end-->
+      <!--Ilya Borodiy part 7 start -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/index/index.testimonials.partial.html"
+      ></section>
+      <!--Ilya Borodiy part 7 end -->
+    </main>
+    <!--Hordiienko Vladyslava part 8 "reservation" start-->
+    <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="partials/index/index.make-a-reservation.partial.html"
+    ></section>
+    <!--Hordiienko Vladyslava part 8 end-->
+    <!--Maryna Huz part 9 'global footer' start-->
+    <footer
+      class="footer"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="partials/global/global.footer.partial.html"
+    ></footer>
+    <!--Maryna Huz part 9 'global footer' end-->
+    <script src="js/pages/index.js"></script>
+  </body>
+</html>

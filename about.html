@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="img/favicon/android-chrome-512x512.png"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/pages/about.css" />
+    <link rel="stylesheet" href="css/partials/about.about-yosemite-gallery.partial.css" />
+</head>
+  </head>
+  <body>
+    <header class="header">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/global/global.header-nav.partial.html"
+      ></nav>
+    </header>
+    <main class="main">
+      <section
+        class="gallery"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/about/about.about-yosemite.partial.html"
+      ></section>
+      <section
+        class="gallery"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/about/about.about-yosemite-gallery.partial.html"
+      ></section>
+      <section
+        class="gallery"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/about/about.season-activities.partial.html"
+      ></section>
+    </main>
+    <footer
+      class="footer"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="partials/global/global.footer.partial.html"
+    ></footer>
+    <script src="js/pages/about.js"></script>
+  </body>
+</html>

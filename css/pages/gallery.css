@@ -1,0 +1,13 @@
+/* Загальні стилі */
+@import url("../base.css");
+@import url("../layout.css");
+@import url("../utilities.css");
+@import url("../components.css");
+
+/* Глобальні partials */
+@import url("../partials/global.header-nav.css");
+@import url("../partials/global.footer.css");
+
+/* Gallery partial */
+@import url("../partials/gallery.roulette-gallery.css");
+@import url("../partials/gallery.roulette-guests.css");

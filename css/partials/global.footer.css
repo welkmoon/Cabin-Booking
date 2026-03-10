@@ -1,0 +1,130 @@
+.footer {
+  background: var(--color-bg);
+  padding-top: 80px;
+  padding-inline: 15px;
+  padding-bottom: 15px;
+  color: var(--color-text);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 0px;
+  gap: 40px;
+  max-width: var(--content-max);
+  margin-inline: auto;
+}
+
+.footer__brand {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo {
+  display: block;
+  max-width: 143px;
+  width: 100%;
+  height: auto;
+}
+
+.footer__nav {
+  text-align: center;
+}
+.footer__menu {
+  list-style: none;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__menu-link {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+.footer__nav--primary .footer__menu-link {
+  font-weight: 500;
+}
+.footer__menu-link:hover,
+.footer__menu-link:focus {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.footer__social {
+  text-align: center;
+}
+.footer__social-title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.footer__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.footer__mobile-year {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  display: block;
+  color: var(--color-text);
+}
+
+@media (min-width: 900px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+    gap: 0;
+    padding-inline: var(--gutter);
+  }
+
+  .footer__brand {
+    justify-content: flex-start;
+  }
+
+  .footer__nav {
+    text-align: left;
+  }
+
+  .footer__social {
+    text-align: right;
+  }
+
+  .footer__menu {
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer__social-list {
+    justify-content: flex-end;
+  }
+
+  .footer__mobile-year {
+    display: none;
+  }
+}

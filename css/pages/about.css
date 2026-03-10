@@ -1,0 +1,13 @@
+/* Загальні стилі */
+@import url("../base.css");
+@import url("../layout.css");
+@import url("../utilities.css");
+@import url("../components.css");
+
+/* Глобальні partials */
+@import url("../partials/global.header-nav.css");
+@import url("../partials/global.footer.css");
+
+/* About partials */
+@import url("../partials/about.about-yosemite.css");
+@import url("../partials/about.season-activities.css");
